@@ -1,68 +1,94 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Global Styles */
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
   }
-  a:hover {
-    color: #747bff;
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  button {
-    background-color: #f9f9f9;
+  
+  /* Titles and Headings */
+  .title {
+    text-align: center;
+    color: #2c3e50;
   }
-}
+  h3, h4 {
+    text-align: center;
+  }
+  
+  /* Rules & Instructions */
+  .rules {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  .instructions {
+    padding: 0 20px;
+  }
+  .instructions ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  /* Button Styles */
+  .button-container {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #2980b9;
+  }
+  .button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  /* Dice and Scoreboard */
+  .dice-row {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+  }
+  .dice-row:first-of-type {
+    border-top: none;
+  }
+  .die {
+    display: inline-block;
+    font-size: 3em;
+    margin: 5px;
+  }
+  .score {
+    font-weight: bold;
+    text-align: center;
+  }
+  .scoreboard {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Message Styling */
+  .message {
+    text-align: center;
+  }
+  
